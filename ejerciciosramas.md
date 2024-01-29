@@ -107,3 +107,19 @@ nano autores.txt
 
 Cuando un compañero/a haya realizado el paso anterior en tu repositorio remoto, sincroníza tu repositorio en local. El resultado debe ser que en local debes tener ese fichero autores.txt.
 Modifica ese fichero, cambiando el nombre de tu compañero/a por el tuyo y añadiendo la fecha y la hora donde lo realizas. Sube los cambios al repositorio remoto.
+
+# Ejercicios etiquetar commits y ver diferencias
+Los nombres de mis commits son:
+    ff31b0a9e06794cf92fb60db40c17986f2190ed3
+    051ebebd92b81597d6884b4ecf5f5701f5007d2d
+
+Para cambiarlos:
+```bash
+git tag  -a v1  -m "Versión 1"  ff31b0a9e06794cf92fb60db40c17986f2190ed3
+git tag  -a v2  -m "Versión 2"  051ebebd92b81597d6884b4ecf5f5701f5007d2d
+```
+Para moverme:
+```bash
+git checkout v1
+git checkout master
+```
