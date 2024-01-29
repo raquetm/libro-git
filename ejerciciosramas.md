@@ -104,3 +104,6 @@ git clone https://github.com/MiguelTorres23/libro-git.git
 ```bash
 nano autores.txt
 ```
+
+Cuando un compañero/a haya realizado el paso anterior en tu repositorio remoto, sincroníza tu repositorio en local. El resultado debe ser que en local debes tener ese fichero autores.txt.
+Modifica ese fichero, cambiando el nombre de tu compañero/a por el tuyo y añadiendo la fecha y la hora donde lo realizas. Sube los cambios al repositorio remoto.
