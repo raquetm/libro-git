@@ -88,3 +88,19 @@ Añade todo lo que tenemos que el repositorio libro al repositorio remoto y comp
 git remote -v
 git remote add origin https://github.com/raquetm/libro-git.git
 ```
+Colabora en el repositorio remoto de otro compañero. Clona su repositorio. Añade el fichero autores.txt que contenga tu nombre y tu correo electrónico. Haz un commit y sube los cambios al repositorio remoto de tu compañero.
+
+```bash
+cd repos
+git clone https://github.com/MiguelTorres23/libro-git.git
+```
+    Clonando en 'libro-git'...
+    remote: Enumerating objects: 18, done.
+    remote: Counting objects: 100% (18/18), done.
+    remote: Compressing objects: 100% (9/9), done.
+    remote: Total 18 (delta 4), reused 17 (delta 3), pack-reused 0
+    Desempaquetando objetos: 100% (18/18), 40.69 KiB | 534.00 KiB/s, listo.
+
+```bash
+nano autores.txt
+```
