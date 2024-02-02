@@ -123,3 +123,61 @@ Para moverme:
 git checkout v1
 git checkout master
 ```
+Para ver os cambios entre a versión 1 e la versión 2:
+```bash
+git  diff  v1..v2
+```
+    diff --git a/indice.txt b/indice.txt
+    ndex ca201e9..c6bfd15 100644
+    --- a/indice.txt
+    +++ b/indice.txt
+    @@ -1,3 +1,4 @@
+    Capitulo 1: Introducción
+    Capitulo 2: Los tres cerditos
+    Capitulo 3: Caperucita roja
+    +Capitulo 4: La bella y la bestia
+
+Tamén podemos facer:
+```bash
+git show v1..v2
+```
+    commit 051ebebd92b81597d6884b4ecf5f5701f5007d2d (tag: v2)
+    Author: raquetm <a23raqueltm@iessanclemente.net>
+    Date:   Fri Jan 26 12:11:36 2024 +0100
+
+        Añadido 4: La bella y la bestia
+
+    diff --git a/indice.txt b/indice.txt
+    index ca201e9..c6bfd15 100644
+    --- a/indice.txt
+    +++ b/indice.txt
+    @@ -1,3 +1,4 @@
+    Capitulo 1: Introducción
+    Capitulo 2: Los tres cerditos
+    Capitulo 3: Caperucita roja
+    +Capitulo 4: La bella y la bestia
+
+# Ejercicio Ramas remotas
+
+Crear una nueva rama llamada autoria y cambiate a ella.
+```bash
+git branch autoria
+git checkout autoria
+```
+Añadir el nombre del usuario (a22…) y su correo al fichero autores.txt.
+```bash
+nano autores.txt
+```
+Hacer un commit con el mensaje.
+```bash
+git add autores.txt
+git commit -m "usuario y correo en autores.txt"
+```
+    [autoria 8c05163] usuario y correo en autores.txt
+    1 file changed, 1 insertion(+)
+
+Subir los cambios de la rama autoria al repositorio remoto en GitHub.
+Crea un diagrama como los vistos en teoría que hagan un resumen de tu repositorio hasta este momento.
+```bash
+git show v1..v2
+```
