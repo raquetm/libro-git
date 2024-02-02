@@ -178,6 +178,6 @@ git commit -m "usuario y correo en autores.txt"
 
 Subir los cambios de la rama autoria al repositorio remoto en GitHub.
 Crea un diagrama como los vistos en teoría que hagan un resumen de tu repositorio hasta este momento.
-```bash
-git show v1..v2
-```
+
+
+![Ramas](./images/RamasGit.png)
